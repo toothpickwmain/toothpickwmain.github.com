@@ -1,15 +1,115 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html slick-uniqueid="1">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>
-            toothpick
-        </title>
-</head>
-    
-    <body style="">
-        <div style="font-size:3.0em;">
-			建站中...
-        </div>
-    </body>
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>牙=_签</title>
+		<meta name="description" content="个人站点" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+<!-- 32x32 -->
+		<link rel="shortcut icon" href="favicon.png">
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">	
+			<div id="bl-main" class="bl-main">
+				<section>
+					<div class="bl-box">
+						<h2 class="bl-icon bl-icon-about">关于</h2>
+					</div>
+					<div class="bl-content">
+						<h2>关于</h2>
+						<p>等等...</p>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<section id="bl-work-section">
+					<div class="bl-box">
+						<h2 class="bl-icon bl-icon-works">工作区</h2>
+					</div>
+					<div class="bl-content">
+						<h2>工作区</h2>
+						<p>一些东西，平常把玩的</p>
+						<ul id="bl-work-items">
+							<li data-panel="panel-1"><a href="#"><img src="images/1.jpg" /></a></li>
+							<li data-panel="panel-2"><a href="#"><img src="images/2.jpg" /></a></li>
+							<li data-panel="panel-3"><a href="#"><img src="images/3.jpg" /></a></li>
+							<li data-panel="panel-4"><a href="#"><img src="images/4.jpg" /></a></li>
+						</ul>
+						<p><a href="http://blog.qiumingxing.cn/">部落区——></a></p>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<section>
+					<div class="bl-box">
+						<h2 class="bl-icon bl-icon-blog">学习区</h2>
+					</div>
+					<div class="bl-content">
+						<h2>一些文章</h2>
+						<article>
+							<h3>一些文章</h3>
+							<p>一些文章<a href="#">更多</a></p>
+						</article>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<section>
+					<div class="bl-box">
+						<h2 class="bl-icon bl-icon-contact">连线</h2>
+					</div>
+					<div class="bl-content">
+						<h2>联系我</h2>
+						<p>QQ:545805704</p>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<!-- Panel items for the works -->
+				<div class="bl-panel-items" id="bl-panel-work-items">
+					<div data-panel="panel-1">
+						<div>
+							<img src="images/1.jpg" />
+							<h3>一些东西</h3>
+							<p>一些东西</p>
+						</div>
+					</div>
+					<div data-panel="panel-2">
+						<div>
+							<img src="images/2.jpg" />
+							<h3>一些东西</h3>
+							<p>一些东西</p>
+						</div>
+					</div>
+					<div data-panel="panel-3">
+						<div>
+							<img src="images/3.jpg" />
+							<h3>一些东西</h3>
+							<p>一些东西</p>
+						</div>
+					</div>
+					<div data-panel="panel-4">
+						<div>
+							<img src="images/4.jpg" />
+							<h3>一些东西</h3>
+							<p>一些东西</p>
+						</div>
+					</div>
+					<nav>
+						<span class="bl-next-work">&gt; Next Project</span>
+						<span class="bl-icon bl-icon-close"></span>
+					</nav>
+				</div>
+			</div>
+		</div><!-- /container -->
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/boxlayout.js"></script>
+		<script>
+			$(function() {
+				Boxlayout.init();
+			});
+		</script>
+	</body>
 </html>
