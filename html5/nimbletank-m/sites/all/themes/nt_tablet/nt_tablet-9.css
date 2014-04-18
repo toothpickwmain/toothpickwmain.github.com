@@ -1,0 +1,81 @@
+a:hover, a:active { }
+
+.landscape #main-copy h3 { position:relative; top:-40px; margin-bottom:-20px; }
+.landscape #main-copy {  padding-top:80px;  }
+
+.landscape #main-copy.awards h3 { top:-40px; }
+.landscape #error .awards p img { padding-top:0; }
+
+/* Video player */
+.portrait .video-holder { width:650px; height:472px; margin:-236px 0 0 -325px; }
+.portrait .video-border { border:2px solid #FFF; background:#000; width:650px; }
+.portrait video { width:650px !important; height: 366px !important }
+
+.landscape .nav-stripe span { font-size:60px; top:-10px; }
+
+.landscape #contact-info .map { height:315px; background-position:center 65%;  width:100%; }
+.landscape #contact-info h3 { padding-top:25px }
+
+.landscape #contact-info h3,
+.landscape #contact-info div,
+.landscape #contact-info p { padding-left:43px; }
+.scroll li.next { right:0px; }
+.scroll li.previous { left:0px;  }
+
+.social { display:none; }
+
+.video-holder .social { display:block; }
+
+#contact-info .telephone a,
+#menu-info .telephone a { display:inline; } 
+.imgs-content-page img { position:relative;  margin-top:-30px; }
+
+/* Playbook CSS 
+
+
+@media screen and (device-width:1024px) and (device-height:600px) and (orientation:landscape) {
+body { background:#FFF; }
+}
+
+
+
+@media screen and (device-width:600px) and (device-height:1024px) and (orientation:portrait) {
+
+#pid-home .fan-plane { width:530px; font-size:18px; }
+body { background:#FFF; }
+
+}*/
+
+/* @media (orientation:landscape) {*/
+@media (max-height:600px) {
+#strategy .strategy-content h3 { font-size:65px; }
+#production #main-copy h3 { font-size:80px; }
+#thinking #main-copy h3 { margin-top:40px; font-size:80px; }
+#customers #main-copy h3 { font-size:85px; }
+#thinking #main-copy #video-espn { padding-top:20px; display:block; }
+#work #projects div { width:250px; height:375px; }
+#work #projects div img { width:80%; }
+#casestudy .imgs-content-page img { height:55%; }
+.landscape body .nav-stripe span { top:-5px; }
+
+}
+
+/* Google Nexus don't like this approach*/
+@media (max-height:444px) { 
+
+.landscape body .nav-stripe span { font-size:48px; top:-5px; }
+
+}
+
+
+/* @media (orientation:portrait) for small tablets {*/
+@media (max-width:650px) {
+#pid-home .fan-plane { width:530px; font-size:18px; }
+#strategy .strategy-content h3 { font-size:65px; margin-top:45px }	
+#customers #main-copy h3,
+#production #main-copy h3 { font-size:85px; padding-top:40px; margin-top:0; }
+#thinking #main-copy h3 { font-size:85px; }
+#work #projects div { width:250px; height:375px; }
+#work #projects div img { width:80%; }
+
+}
