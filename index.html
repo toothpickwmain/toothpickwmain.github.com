@@ -13,6 +13,35 @@
 		<link rel="shortcut icon" href="favicon.png">
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<script src="js/modernizr.custom.js"></script>
+
+		<style type="text/css">
+		.entry-item .entry-title
+		{
+			font-weight: 700;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			margin: 0 0 10px 0;
+			padding-top: 20px;
+			font-size: 2.5em;
+		}
+		
+		.entry-item .entry-date
+		{
+			float: left;
+			font-size: 1.4em;
+			font-style: italic;
+		}
+		
+		.entry-item p
+		{
+			font-size: 1.6em;
+			display: block;
+			-webkit-margin-before: 1em;
+			-webkit-margin-after: 1em;
+			-webkit-margin-start: 0px;
+			-webkit-margin-end: 0px;
+		}
+		</style>
 	</head>
 	<body>
 		<div class="container">	
@@ -28,32 +57,37 @@
 					<span class="bl-icon bl-icon-close"></span>
 				</section>
 				<section id="bl-work-section">
-					<div class="bl-box">
+					<div class="bl-box" onclick="getBlogArticle();">
 						<h2 class="bl-icon bl-icon-works">工作区</h2>
 					</div>
 					<div class="bl-content">
 						<h2>工作区</h2>
-						<p>一些东西</p>
+						<h3><a href="http://blog.qiumingxing.cn/" style="color:#72CDA9;font-size: 2.0em;">GO！——>部落区</a></h3>
+						<div id="blog-article">
+							<h3>加载中...</h3>
+						</div>
+						<hr>
+						<h3>html5的一些东西</h3>
 						<ul id="bl-work-items">
-							<li data-panel="panel-1"><a href="#"><img src="images/1.jpg" /></a></li>
-							<li data-panel="panel-2"><a href="#"><img src="images/2.jpg" /></a></li>
-							<li data-panel="panel-3"><a href="#"><img src="images/3.jpg" /></a></li>
-							<li data-panel="panel-4"><a href="#"><img src="images/4.jpg" /></a></li>
+							<li data-panel="panel-1"><a href="#"><img src="images/harmony.jpg" /></a></li>
+							<li data-panel="panel-2"><a href="#"><img src="images/Liquid Particle.jpg" /></a></li>
+							<li data-panel="panel-3"><a href="#"><img src="images/Liquid Particles 3D.jpg" /></a></li>
+							<li data-panel="panel-4"><a href="#"><img src="images/plasmatree.jpg" /></a></li>
+							<li data-panel="panel-5"><a href="#"><img src="images/Space Noodles.jpg" /></a></li>
+							<li data-panel="panel-6"><a href="#"><img src="images/Sticky Thing.jpg" /></a></li>
 						</ul>
-						<p><a href="http://blog.qiumingxing.cn/">部落区——></a></p>
 					</div>
 					<span class="bl-icon bl-icon-close"></span>
 				</section>
 				<section>
-					<div class="bl-box">
+					<div class="bl-box" onclick="getArticle();">
 						<h2 class="bl-icon bl-icon-blog">学习区</h2>
 					</div>
 					<div class="bl-content">
 						<h2>一些文章</h2>
-						<article>
-							<h3>一些文章</h3>
-							<p>一些文章<a href="#">更多</a></p>
-						</article>
+						<div id="article">
+							<h3>加载中...</h3>
+						</div>
 					</div>
 					<span class="bl-icon bl-icon-close"></span>
 				</section>
@@ -71,41 +105,83 @@
 				<div class="bl-panel-items" id="bl-panel-work-items">
 					<div data-panel="panel-1">
 						<div>
-							<img src="images/1.jpg" />
-							<h3>一些东西</h3>
-							<p>一些东西</p>
+							<a href="/harmony" target="_blank">
+							<img src="images/harmony.jpg" />
+							<h3>html5版素描</h3>
+							<p>网页上不错的素描板</p>
+							</a>
 						</div>
 					</div>
 					<div data-panel="panel-2">
 						<div>
-							<img src="images/2.jpg" />
-							<h3>一些东西</h3>
-							<p>一些东西</p>
+							<a href="/html5/Liquid Particle/" target="_blank">
+							<img src="images/Liquid Particle.jpg" />
+							<h3>液体颗粒</h3>
+							<p></p>
+							</a>
 						</div>
 					</div>
 					<div data-panel="panel-3">
 						<div>
-							<img src="images/3.jpg" />
-							<h3>一些东西</h3>
-							<p>一些东西</p>
+							<a href="/html5/Liquid Particles 3D/" target="_blank">
+							<img src="images/Liquid Particles 3D.jpg" />
+							<h3>液体颗粒3D</h3>
+							<p></p>
+							</a>
 						</div>
 					</div>
 					<div data-panel="panel-4">
 						<div>
-							<img src="images/4.jpg" />
-							<h3>一些东西</h3>
-							<p>一些东西</p>
+							<a href="/html5/plasmatree/" target="_blank">
+							<img src="images/plasmatree.jpg" />
+							<h3>梦幻树</h3>
+							<p>人生像彩色一样绽放</p>
+							</a>
+						</div>
+					</div>
+					<div data-panel="panel-5">
+						<div>
+							<a href="/html5/Space Noodles/" target="_blank">
+							<img src="images/Space Noodles.jpg" />
+							<h3>空间面条</h3>
+							<p>任意挥</p>
+							</a>
+						</div>
+					</div>
+					<div data-panel="panel-6">
+						<div>
+							<a href="/html5/Sticky Thing/" target="_blank">
+							<img src="images/Sticky Thing.jpg" />
+							<h3>红色糖皮</h3>
+							<p>恶心的糖皮，各种粘糊，无聊可以玩玩。</p>
+							</a>
 						</div>
 					</div>
 					<nav>
-						<span class="bl-next-work">&gt; Next Project</span>
+						<span class="bl-next-work">&gt; 下一个项目</span>
 						<span class="bl-icon bl-icon-close"></span>
 					</nav>
 				</div>
 			</div>
 		</div><!-- /container -->
-		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="http://libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
 		<script src="js/boxlayout.js"></script>
+   	 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    	<script type="text/javascript" src="js/jquery.googleMultiFeed.js"></script>
+    	<script>
+			function getBlogArticle(){
+				$('#blog-article').googleMultiFeed({
+					urls: ['http://blog.qiumingxing.cn/atom.xml'],
+					numEntries: 5
+				});
+			}
+			function getArticle(){
+				$('#article').googleMultiFeed({
+					urls: ['http://zh.qiumingxing.cn/feed.xml'],
+					numEntries: 5
+				});
+			}
+		</script>
 		<script>
 			$(function() {
 				Boxlayout.init();
