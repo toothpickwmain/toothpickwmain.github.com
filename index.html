@@ -64,7 +64,6 @@
 						<h2>工作区</h2>
 						<h3><a href="http://blog.qiumingxing.cn/" style="color:#72CDA9;font-size: 2.0em;">GO！——>部落区</a></h3>
 						<div id="blog-article">
-							<h3>加载中...</h3>
 						</div>
 						<hr>
 						<h3>html5的一些东西</h3>
@@ -86,7 +85,6 @@
 					<div class="bl-content">
 						<h2>一些文章</h2>
 						<div id="article">
-							<h3>加载中...</h3>
 						</div>
 					</div>
 					<span class="bl-icon bl-icon-close"></span>
@@ -164,23 +162,47 @@
 				</div>
 			</div>
 		</div><!-- /container -->
-		<script src="http://libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 		<script src="js/boxlayout.js"></script>
-   	 	<script type="text/javascript" src="https://www.google.com.hk/jsapi"></script>
-    	<script type="text/javascript" src="js/jquery.googleMultiFeed.js"></script>
-    	<script>
-			function getBlogArticle(){
-				$('#blog-article').googleMultiFeed({
-					urls: ['http://blog.qiumingxing.cn/atom.xml'],
-					numEntries: 5
-				});
-			}
-			function getArticle(){
-				$('#article').googleMultiFeed({
-					urls: ['http://zh.qiumingxing.cn/feed.xml'],
-					numEntries: 5
-				});
-			}
+    	<script type="text/javascript" src="js/jquery.feeds.min.js"></script>
+		<script type="text/html" id="PostListItem">
+		    <div class="entry-item">
+				<a href=<!=link!> title=<!=title!> target="_blank">
+					<div class="entry-title"><!=title!></div>
+					<span class="entry-date"><!=publishedDate!></span>
+					<p><!=contentSnippet!></p>
+				</a>
+			</div>
+		</script>
+		<script>
+		function getBlogArticle() {
+			$('#blog-article').feeds({
+			    feeds: {
+			        "toothpick" : "http://blog.qiumingxing.cn/atom.xml" 
+			    },
+			    preprocess: function ( feed ) {
+			        var date = new Date(this.publishedDate);
+			        this.publishedDate = date.getFullYear()+'年'+date.getMonth()+'月'+date.getDate()+'日';
+			    },
+			    entryTemplate: 'PostListItem',
+				loadingTemplate: '<div class="feeds-loader">加载中...<a onclick="getBlogArticle();">重试</a></div>',
+				max: 5
+			});
+		}
+		function getArticle() {
+			$('#article').feeds({
+			    feeds: {
+			        "toothpick" : "http://zh.qiumingxing.cn/feed.xml" 
+			    },
+			    preprocess: function ( feed ) {
+			        var date = new Date(this.publishedDate);
+			        this.publishedDate = date.getFullYear()+'年'+date.getMonth()+'月'+date.getDate()+'日';
+			    },
+			    entryTemplate: 'PostListItem',
+				loadingTemplate: '<div class="feeds-loader">加载中...<a onclick="getArticle();">重试</a></div>',
+				max: 5
+			});
+		}
 		</script>
 		<script>
 			$(function() {
