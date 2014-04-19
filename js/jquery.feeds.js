@@ -91,7 +91,12 @@
 					success: function( data ) {
 						cache[ cacheKey ] = data;
 						self.processResponse( data, this.key, this.feed );
-					}
+					},
+	                error: function () {
+	                    console.log('加载失败!');
+						this.fetchFeed( this.key, this.feed, this.max, this.output );
+						return;
+	                }
 				} );
 			},
 			
