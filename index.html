@@ -12,7 +12,6 @@
 <!-- 32x32 -->
 		<link rel="shortcut icon" href="favicon.png">
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<script src="js/modernizr.custom.js"></script>
 
 		<style type="text/css">
 		.entry-item .entry-title
@@ -40,6 +39,27 @@
 			-webkit-margin-after: 1em;
 			-webkit-margin-start: 0px;
 			-webkit-margin-end: 0px;
+		}
+		#loading{
+			position: fixed;  
+			top: 50px;  
+			left: 50%;  
+			width: 200px;  
+			margin-left: -100px; 
+			font-size: 2em; 
+			color: white;
+			background-color: rgba(0, 0, 0, 0.5);  
+			border-radius: 0.4em;
+			padding: 15px 0 ;  
+			text-align:center;  
+			opacity: 1.0;  
+   
+			/*The good stuff */  
+			-webkit-transition: opacity 0.5s ease-out; /* Saf3.2+, Chrome */  
+			-moz-transition: opacity 0.5s ease-out; /* FF4+ */  
+			-ms-transition: opacity 0.5s ease-out; /* IE10? */  
+			-o-transition: opacity 0.5s ease-out; /* Opera 10.5+ */  
+			transition: opacity 0.5s ease-out;  
 		}
 		</style>
 	</head>
@@ -162,9 +182,7 @@
 				</div>
 			</div>
 		</div><!-- /container -->
-		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-		<script src="js/boxlayout.js"></script>
-    	<script type="text/javascript" src="js/jquery.feeds.min.js"></script>
+		<div id="loading">加载中...</div>
 		<script type="text/html" id="PostListItem">
 		    <div class="entry-item">
 				<a href=<!=link!> title=<!=title!> target="_blank">
@@ -173,6 +191,16 @@
 					<p><!=contentSnippet!></p>
 				</a>
 			</div>
+		</script>
+
+		<script src="http://cdn.staticfile.org/seajs/2.2.1/sea.js"></script>
+		<script>
+		seajs.use(['http://www.qiumingxing.cn/js/modernizr.custom.js','http://libs.baidu.com/jquery/2.0.0/jquery.min.js'],function() {
+			seajs.use(['http://www.qiumingxing.cn/js/boxlayout.js','http://www.qiumingxing.cn/js/jquery.feeds.min.js'], function() {
+				Boxlayout.init();
+				$('#loading').css("opacity","0.0");
+			});
+		});
 		</script>
 		<script>
 		function getBlogArticle() {
@@ -203,11 +231,6 @@
 				max: 5
 			});
 		}
-		</script>
-		<script>
-			$(function() {
-				Boxlayout.init();
-			});
 		</script>
 	</body>
 </html>
