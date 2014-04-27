@@ -210,7 +210,8 @@
 			    },
 			    preprocess: function ( feed ) {
 			        var date = new Date(this.publishedDate);
-			        this.publishedDate = date.getFullYear()+'年'+date.getMonth()+1+'月'+date.getDate()+'日';
+					var month = date.getMonth()+1;
+			        this.publishedDate = date.getFullYear()+'年'+month+'月'+date.getDate()+'日';
 			    },
 			    entryTemplate: 'PostListItem',
 				loadingTemplate: '<div class="feeds-loader">加载中...</div>',
@@ -224,7 +225,8 @@
 			    },
 			    preprocess: function ( feed ) {
 			        var date = new Date(this.publishedDate);
-			        this.publishedDate = date.getFullYear()+'年'+date.getMonth()+1+'月'+date.getDate()+'日';
+					var month = date.getMonth()+1;
+			        this.publishedDate = date.getFullYear()+'年'+month+'月'+date.getDate()+'日';
 			    },
 			    entryTemplate: 'PostListItem',
 				loadingTemplate: '<div class="feeds-loader">加载中...</div>',
