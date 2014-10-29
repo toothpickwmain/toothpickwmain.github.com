@@ -7,7 +7,7 @@
 	$.fn.feeds = function( options ) {
 
 		var engine = {
-			service: '//ajax.googleapis.com/ajax/services/feed/load?v=1.0',
+			service: '//ajax.useso.com/ajax/services/feed/load?v=1.0',
 			
 			settings: {
 				loadingTemplate: '<div class="feeds-loader">Loading entries ...</div>',
