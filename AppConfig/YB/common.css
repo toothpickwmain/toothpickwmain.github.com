@@ -1,0 +1,156 @@
+*{
+    background:rgba(0,0,0,0.0);
+	margin：0;
+	padding:0;
+}
+/*http://stackoverflow.com/questions/9157080/wrong-webkit-tap-highlight-color-behavior-when-page-as-web-standalone-app */
+/*html {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-user-select: none;
+}*/
+
+/*禁用 UIWebView 里面的链接长按弹出效果*/
+html,body{-webkit-touch-callout: none;}
+
+body{}
+
+a {
+    text-decoration:none;
+    color:#ff9524 
+}
+
+a:link, a:visited {
+text-decoration: none;
+}
+
+h1 {
+    font-size: 24px;
+    color:#ff9524;
+}
+
+p {
+    font-size: 17px;
+}
+
+p strong {
+    font-size: 17px;
+}
+
+/*table*/
+table {
+	border: 0;
+	border-spacing: 0;
+	font-size: 14px;
+	margin:0;
+	width: 100%;
+    border-spacing: 0;
+    background:rgba(0,0,0,0.0);
+}
+
+tr {
+	display: table-row;
+	border: 0;
+	width: 100%;
+	vertical-align: inherit;
+	border-color: inherit;
+    background:rgba(0,0,0,0.0);
+}
+
+td, th {
+	display: table-cell;
+	border: 0;
+	width: 200%;
+}
+
+td:first-child:nth-last-child(n)~td {
+
+}
+
+td p, td p {
+    display: block;
+	text-align: center;
+    margin: 5%;
+    padding: 2%;
+    -webkit-border-radius: 2px;
+}
+
+td p *, td p * {
+	text-align: center;
+}
+
+td p a, td p a {
+
+	text-align: center;
+}
+
+td p:nth-child(2), td p:nth-child(2), td p:nth-child(2) *, td p:nth-child(2) *
+{
+    font-size: 12px;
+	display: inline-block;
+    color: #ffffff;
+    background:#ff9524;
+}
+td p:nth-child(2):hover, td p:nth-child(2):hover,td p:nth-child(2) *:hover, td p:nth-child(2) *:hover {
+    background:#864101;
+}
+
+/*列表*/
+ul，li { 
+	margin：0;
+	padding:0;
+	list-style-type: none;
+}
+.book-navigation li {
+}
+.book-navigation li, .book-navigation li * {
+}
+.book-navigation li a {
+    display: inline-block;
+	width: auto;
+	margin: 2%;
+    padding: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #ffffff;
+    background:#ff9524;
+    -webkit-border-radius: 2px;
+}
+.field-item>p>a~p {
+}
+.field-item>p>a {
+    display: inline-block;
+	width: auto;
+	margin: 1%;
+    padding: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: #ffffff;
+    background:#ff9524;
+    -webkit-border-radius: 2px;
+}
+
+.field-item>p>.colorbox, .page-links>a
+{
+    display: inline-block;
+	width: auto;
+    font-size: 12px;
+	margin: 1%;
+    padding: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: #ffffff;
+    background:#ff9524;
+    -webkit-border-radius: 2px;
+}
+.field-item>p>a:hover
+{
+    background:#864101;
+}
+/*隐藏*/
+.field-item>p>.colorbox~img{
+    display: none;
+}
+
+.link-wrapper .links {
+    display: none;
+}
