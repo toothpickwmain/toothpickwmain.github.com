@@ -17,7 +17,7 @@ html,body{-webkit-touch-callout: none;}
 
 a {
     text-decoration:none;
-    color:#333333;
+    color:#333333  !important;
 }
 
 a:link, a:visited {
@@ -27,6 +27,10 @@ text-decoration: none;
 h1 {
     font-size: 24px;
     color:#333333;
+}
+
+tr {
+	background-color:rgba(0,0,0,0.0) !important;
 }
 
 p {
@@ -41,6 +45,8 @@ p span, p strong {
 p img {
 	border: 1px solid  lightgray;	
 	box-shadow: 0.5px 0.5px 2px #999999;
+	padding-top: 2px;
+	background-color:#ffffff;
 }
 
 p strong {
@@ -70,14 +76,13 @@ tr {
 td, th {
 	display: table-cell;
 	border: 0;
-	width: 200%;
 }
 
 td:first-child:nth-last-child(n)~td {
 
 }
 
-td p, td p {
+td p, td strong {
     display: block;
 	text-align: center;
     margin: 5%;
@@ -100,10 +105,10 @@ td p:nth-child(2), td p:nth-child(2), td p:nth-child(2) *, td p:nth-child(2) *
 	display: inline-block;
     color: #333333;
     /* background:#333333; */
-    border: 1px solid  #333333;
+/*    border: 1px solid  #333333;*/
 }
 td p:nth-child(2):hover, td p:nth-child(2):hover,td p:nth-child(2) *:hover, td p:nth-child(2) *:hover {
-    background:#864101;
+    background:#999999;
 }
 
 /*列表*/
@@ -120,9 +125,7 @@ ul，li {
     display: inline-block;
 	width: auto;
 	margin: 2%;
-    padding: 10%;
-    padding-top: 2%;
-    padding-bottom: 2%	
+    padding: 1% 5%;	
     color: #333333;
     /* background:#333333; */
     border: 1px solid  #333333;
@@ -159,7 +162,7 @@ ul，li {
 }
 .field-item>p>a:hover
 {
-    background:#864101;
+    background:#999999;
 }
 /*隐藏*/
 .field-item>p>.colorbox~img{
@@ -168,4 +171,85 @@ ul，li {
 
 .link-wrapper .links {
     display: none;
+}
+
+
+
+/*表格样式*/
+table {
+    background-color:rgba(0,0,0,0.0) !important;
+	border: solid #ccc 1px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 1px 1px #ccc;
+	-moz-box-shadow: 0 1px 1px #ccc;
+	box-shadow: 0 1px 1px #ccc;
+}
+
+table tr {
+	-o-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+
+table .highlight,
+			table tr:hover {
+	background: #fbf8e9;
+}
+
+table td, 
+			table th {
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	padding: 0px;
+	text-align: left;
+}
+
+table th {
+	background-color: #dce9f9;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+	background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+	background-image: -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+	background-image: -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+	background-image: -o-linear-gradient(top, #ebf3fc, #dce9f9);
+	background-image: linear-gradient(top, #ebf3fc, #dce9f9);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ebf3fc, endColorstr=#dce9f9);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ebf3fc, endColorstr=#dce9f9)";
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+	box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+	border-top: none;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+table td:first-child, 
+			table th:first-child {
+	border-left: none;
+}
+
+table th:first-child {
+	-moz-border-radius: 6px 0 0 0;
+	-webkit-border-radius: 6px 0 0 0;
+	border-radius: 6px 0 0 0;
+}
+
+table th:last-child {
+	-moz-border-radius: 0 6px 0 0;
+	-webkit-border-radius: 0 6px 0 0;
+	border-radius: 0 6px 0 0;
+}
+
+table tr:last-child td:first-child {
+	-moz-border-radius: 0 0 0 6px;
+	-webkit-border-radius: 0 0 0 6px;
+	border-radius: 0 0 0 6px;
+}
+
+table tr:last-child td:last-child {
+	-moz-border-radius: 0 0 6px 0;
+	-webkit-border-radius: 0 0 6px 0;
+	border-radius: 0 0 6px 0;
 }
