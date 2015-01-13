@@ -2,6 +2,7 @@
     background:rgba(0,0,0,0.0);
 	margin：0;
 	padding:0;
+	text-align: justify;
 }
 /*http://stackoverflow.com/questions/9157080/wrong-webkit-tap-highlight-color-behavior-when-page-as-web-standalone-app */
 /*html {
@@ -12,11 +13,11 @@
 /*禁用 UIWebView 里面的链接长按弹出效果*/
 html,body{-webkit-touch-callout: none;}
 
-body{}
+/*body{background:lightgray;}*/
 
 a {
     text-decoration:none;
-    color:#ff9524 
+    color:#333333;
 }
 
 a:link, a:visited {
@@ -25,11 +26,21 @@ text-decoration: none;
 
 h1 {
     font-size: 24px;
-    color:#ff9524;
+    color:#333333;
 }
 
 p {
     font-size: 17px;
+}
+
+p span, p strong {
+	background-color:rgba(0,0,0,0.0) !important;
+	color: #333333 !important;
+}
+
+p img {
+	border: 1px solid  lightgray;	
+	box-shadow: 0.5px 0.5px 2px #999999;
 }
 
 p strong {
@@ -87,8 +98,9 @@ td p:nth-child(2), td p:nth-child(2), td p:nth-child(2) *, td p:nth-child(2) *
 {
     font-size: 12px;
 	display: inline-block;
-    color: #ffffff;
-    background:#ff9524;
+    color: #333333;
+    /* background:#333333; */
+    border: 1px solid  #333333;
 }
 td p:nth-child(2):hover, td p:nth-child(2):hover,td p:nth-child(2) *:hover, td p:nth-child(2) *:hover {
     background:#864101;
@@ -110,9 +122,10 @@ ul，li {
 	margin: 2%;
     padding: 10%;
     padding-top: 2%;
-    padding-bottom: 2%;
-    color: #ffffff;
-    background:#ff9524;
+    padding-bottom: 2%	
+    color: #333333;
+    /* background:#333333; */
+    border: 1px solid  #333333;
     -webkit-border-radius: 2px;
 }
 .field-item>p>a~p {
@@ -124,8 +137,9 @@ ul，li {
     padding: 10%;
     padding-top: 1%;
     padding-bottom: 1%;
-    color: #ffffff;
-    background:#ff9524;
+    color: #333333;
+    /* background:#333333; */
+    border: 1px solid  #333333;
     -webkit-border-radius: 2px;
 }
 
@@ -138,8 +152,9 @@ ul，li {
     padding: 2%;
     padding-top: 1%;
     padding-bottom: 1%;
-    color: #ffffff;
-    background:#ff9524;
+    color: #333333;
+    /* background:#333333; */
+    border: 1px solid  #333333;
     -webkit-border-radius: 2px;
 }
 .field-item>p>a:hover
