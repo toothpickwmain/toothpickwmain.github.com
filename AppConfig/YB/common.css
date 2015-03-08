@@ -1,14 +1,14 @@
 *{
     background:rgba(0,0,0,0.0);
-	margin：0;
-	padding:0;
-	text-align: justify;
+    margin：0;
+    padding:0;
+    text-align: justify;
 }
 /*http://stackoverflow.com/questions/9157080/wrong-webkit-tap-highlight-color-behavior-when-page-as-web-standalone-app */
 /*html {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-user-select: none;
-}*/
+ -webkit-tap-highlight-color: rgba(0,0,0,0);
+ -webkit-user-select: none;
+ }*/
 
 /*禁用 UIWebView 里面的链接长按弹出效果*/
 html,body{-webkit-touch-callout: none;}
@@ -21,7 +21,7 @@ a {
 }
 
 a:link, a:visited {
-text-decoration: none;
+    text-decoration: none;
 }
 
 h1 {
@@ -30,7 +30,7 @@ h1 {
 }
 
 tr {
-	background-color:rgba(0,0,0,0.0) !important;
+    background-color:rgba(0,0,0,0.0) !important;
 }
 
 p {
@@ -38,15 +38,15 @@ p {
 }
 
 p span, p strong {
-	background-color:rgba(0,0,0,0.0) !important;
-	color: #333333 !important;
+    background-color:rgba(0,0,0,0.0) !important;
+    color: #333333 !important;
 }
 
 p img {
-	border: 1px solid  lightgray;	
-	box-shadow: 0.5px 0.5px 2px #999999;
-	padding-top: 2px;
-	background-color:#ffffff;
+    border: 1px solid  lightgray;
+    box-shadow: 0.5px 0.5px 2px #999999;
+    padding-top: 2px;
+    background-color:#ffffff;
 }
 
 p strong {
@@ -55,67 +55,67 @@ p strong {
 
 /*table*/
 table {
-	border: 0;
-	border-spacing: 0;
-	font-size: 14px;
-	margin:0;
-	width: 100%;
+    border: 0;
+    border-spacing: 0;
+    font-size: 14px;
+    margin:0;
+    width: 100%;
     border-spacing: 0;
     background:rgba(0,0,0,0.0);
 }
 
 tr {
-	display: table-row;
-	border: 0;
-	width: 100%;
-	vertical-align: inherit;
-	border-color: inherit;
+    display: table-row;
+    border: 0;
+    width: 100%;
+    vertical-align: inherit;
+    border-color: inherit;
     background:rgba(0,0,0,0.0);
 }
 
 td, th {
-	display: table-cell;
-	border: 0;
+    display: table-cell;
+    border: 0;
 }
 
 td:first-child:nth-last-child(n)~td {
-
+    
 }
 
 td p, td strong {
     display: block;
-	text-align: center;
+    text-align: center;
     margin: 5%;
     padding: 2%;
     -webkit-border-radius: 2px;
 }
 
 td p *, td p * {
-	text-align: center;
+    text-align: center;
 }
 
 td p a, td p a {
-
-	text-align: center;
+    
+    text-align: center;
 }
 
 td p:nth-child(2), td p:nth-child(2), td p:nth-child(2) *, td p:nth-child(2) *
 {
     font-size: 12px;
-	display: inline-block;
+    display: inline-block;
     color: #333333;
     /* background:#333333; */
-/*    border: 1px solid  #333333;*/
+    /*    border: 1px solid  #333333;*/
 }
 td p:nth-child(2):hover, td p:nth-child(2):hover,td p:nth-child(2) *:hover, td p:nth-child(2) *:hover {
     background:#999999;
 }
 
 /*列表*/
-ul，li { 
-	margin：0;
-	padding:0;
-	list-style-type: none;
+ul，li {
+    margin：0;
+    padding:0;
+    list-style-type: none;
 }
 .book-navigation li {
 }
@@ -123,9 +123,9 @@ ul，li {
 }
 .book-navigation li a {
     display: inline-block;
-	width: auto;
-	margin: 2%;
-    padding: 1% 5%;	
+    width: auto;
+    margin: 2%;
+    padding: 1% 5%;
     color: #333333;
     /* background:#333333; */
     border: 1px solid  #333333;
@@ -135,8 +135,8 @@ ul，li {
 }
 .field-item>p>a {
     display: inline-block;
-	width: auto;
-	margin: 1%;
+    width: auto;
+    margin: 1%;
     padding: 10%;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -149,9 +149,9 @@ ul，li {
 .field-item>p>.colorbox, .page-links>a
 {
     display: inline-block;
-	width: auto;
+    width: auto;
     font-size: 12px;
-	margin: 1%;
+    margin: 1%;
     padding: 2%;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -177,79 +177,81 @@ ul，li {
 
 /*表格样式*/
 table {
+    width: 95% !important;
+    height: auto !important;
     background-color:rgba(0,0,0,0.0) !important;
-	border: solid #ccc 1px;
-	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
-	border-radius: 6px;
-	-webkit-box-shadow: 0 1px 1px #ccc;
-	-moz-box-shadow: 0 1px 1px #ccc;
-	box-shadow: 0 1px 1px #ccc;
+    border: solid #ccc 1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px #ccc;
+    -moz-box-shadow: 0 1px 1px #ccc;
+    box-shadow: 0 1px 1px #ccc;
 }
 
 table tr {
-	-o-transition: all 0.1s ease-in-out;
-	-webkit-transition: all 0.1s ease-in-out;
-	-moz-transition: all 0.1s ease-in-out;
-	-ms-transition: all 0.1s ease-in-out;
-	transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 table .highlight,
-			table tr:hover {
-	background: #fbf8e9;
+table tr:hover {
+    background: #fbf8e9;
 }
 
-table td, 
-			table th {
-	border-left: 1px solid #ccc;
-	border-top: 1px solid #ccc;
-	padding: 0px;
-	text-align: left;
+table td,
+table th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 0px;
+    text-align: left;
 }
 
 table th {
-	background-color: #dce9f9;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
-	background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
-	background-image: -moz-linear-gradient(top, #ebf3fc, #dce9f9);
-	background-image: -ms-linear-gradient(top, #ebf3fc, #dce9f9);
-	background-image: -o-linear-gradient(top, #ebf3fc, #dce9f9);
-	background-image: linear-gradient(top, #ebf3fc, #dce9f9);
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ebf3fc, endColorstr=#dce9f9);
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ebf3fc, endColorstr=#dce9f9)";
-	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
-	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
-	box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
-	border-top: none;
-	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    background-color: #dce9f9;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+    background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image: -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image: -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image: -o-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image: linear-gradient(top, #ebf3fc, #dce9f9);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ebf3fc, endColorstr=#dce9f9);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ebf3fc, endColorstr=#dce9f9)";
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    border-top: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
 }
 
-table td:first-child, 
-			table th:first-child {
-	border-left: none;
+table td:first-child,
+table th:first-child {
+    border-left: none;
 }
 
 table th:first-child {
-	-moz-border-radius: 6px 0 0 0;
-	-webkit-border-radius: 6px 0 0 0;
-	border-radius: 6px 0 0 0;
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
 }
 
 table th:last-child {
-	-moz-border-radius: 0 6px 0 0;
-	-webkit-border-radius: 0 6px 0 0;
-	border-radius: 0 6px 0 0;
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
 }
 
 table tr:last-child td:first-child {
-	-moz-border-radius: 0 0 0 6px;
-	-webkit-border-radius: 0 0 0 6px;
-	border-radius: 0 0 0 6px;
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
 }
 
 table tr:last-child td:last-child {
-	-moz-border-radius: 0 0 6px 0;
-	-webkit-border-radius: 0 0 6px 0;
-	border-radius: 0 0 6px 0;
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
 }
